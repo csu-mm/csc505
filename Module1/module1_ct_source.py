@@ -1,3 +1,4 @@
+# CSC505  Principles of Software Development
 # Python Program: Module 1: Critical Thinking
 # Created by Mukul Mondal
 # Saturday, July 20th, 2025
@@ -28,34 +29,29 @@ Why do we continue to have difficulty in measuring progress, as software is bein
 # If both inputs are numeric then, the program shows the addition result.
 #
 # I'm using Visual Studio Code with python extension installed.
-#
 # It displays the result or message in the output window.
 #
 # I've added other important information, assumptions and comments inside the program itself.
 #
 
-import sys
-
 
 # python supports 2 numeric types: int, float.
-# Specific numeric Data types are not mentioned in the problem statement.
-# Here, I'll provide code for both data types.
-# To run with float data type, please uncomment the 2 lines of code for 'float' inside 'try' block.
+# Here, I'll proceed with 'int' both data types.
 #
 # Assumption:
 # Python's integer type (int) has arbitrary precision, so detecting overflow in numeric 
 # operation, normally not needed. If you think, I should provide the logic for overflow 
-# condition, then please let me know, I'll provide that logic.
+# condition, then please let me know.
 
-redoInput = True  # I'll let user try again if incorrect input entered
+redoInput = True  # I'll let user try again if incorrect input entered by user
 
 while redoInput:   
     
     try:
         # Read user inputs and validate
         num1 = int(input('Enter your first number:\n'))     # for 'int' data types
-        num2 = int(input('Enter your second number:\n'))    # for 'int' data types        
-        redoInput = False
+        num2 = int(input('Enter your second number:\n'))    # for 'int' data types
+        redoInput = False  # both inputs are valid 'int' type
     except ValueError:
         print('Please try again with numeric inputs.')
         redoInput = True
