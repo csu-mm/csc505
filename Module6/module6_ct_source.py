@@ -37,15 +37,15 @@ def df(x):
     return -math.sin(x) - 1
 
 # function for final solution
-def solve_root(x0: float, tol:float=1e-6, max_iter:int=100)->float:
+def solve_root(x0: float, tolerance:float=1e-6, max_iteration:int=100)->float:
     x: float = x0
-    for i in range(max_iter):
+    for i in range(max_iteration):
         fx = f(x)
         dfx = df(x)
         if dfx == 0:
             raise ValueError("Derivative is zero. No convergence.")
         x_new = x - fx / dfx
-        if abs(fx) < tol:
+        if abs(fx) < tolerance:
             return x_new
         x = x_new
     raise ValueError("Did not converge within max iterations.")
