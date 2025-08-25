@@ -160,46 +160,38 @@ class DamageFile:
 # Usecase, Actor and usecase details
 def execute_module5_ct_usecase_trigger_sequence():    
     print("Public works department repair system")
-    print("=== Use Cases and Trigger Sequences ===")
-    print("Use Case: PHTRS and and Running")
-    print("\t: PHTRS is ready to accept web requests from citizens")
-
-    print("Use Case: Citizen login. Actor: Primary actor.")
+    print("=== Use Cases and Trigger Sequences ===")    
+    print("Use Case: Pothole Reporting. Actor: Primary actor.")
+    print("\t: PHTRS is ready to accept web requests from citizens")    
     print("Use Case(optional): Unsuccessful login. Possibly Registration update needed.")
     print("\t: Citizen logs in with their credential.")
     print("\t: Citizen goes to Pothole reporting web page.")    
-    
-    print("Use Case: Register/Report Pothole. Actor: Primary actor.")
-    print("\t: Citizen registers the Pothole with it's address and sevirity.")
-    
-    print("Use Case: Create and initialize other supporting objects. Actor: System actor.")
-    print("\t: Create and initialize other supporting objects like RepairCrew, Equipment, FillerMaterial etc")
-    
-    print("Use Case: Create Pothole object. Actor: System actor.")
-    print("\t: Initializes all other required properties of the Pothole")
-    
-    print("Use Case: Save Pothole object in Storage. Actor: System actor.")
-    print("\t: Saves the Pothole object's Sate in Storage.")
+    print("\t: Citizen Register/Report a Pothole.")    
+    print("\t: Citizen logout.")
 
-    print("Use Case: Create WorkOrder object. Actor: Human actor and System actor.")
-    print("\t: An Employee within 'the department of public works' creates the WorkOrder based on the Pothole object.")
-    print("\t: WorkOrder object fully initialized by the System actor")
+    print("Use Case: Pothole Object creation. Actors: Human actor(Employee of PHTRS), System actor")  
+    print("\t: Human actor logs in")
+    print("\t: Creates Pothole object, based on the earlier reported pothole by the citizen")
+    print("\t: Initializes Pothole object")
+    print("\t: System actor: does additional initializations for the Pothole object")
+    print("\t: System actor: Saves fully initialized Pothole object in the storage")
 
-    print("Use Case: Save WorkOrder object in Storage. Actor: System actor.")
-    print("\t: Saves the WorkOrder object's Sate in Storage.")
+    print("Use Case: WorkOrder. Actors: Human actor(Employee of PHTRS), System actor.") 
+    print("\t: Human actor logs in")
+    print("\t: Human actor: Creates WorkOrder object with basic information from the pothole")
+    print("\t: System actor: Creates supporting objects for the WorkOrder object")
+    print("\t: System actor: Sets supporting objects to the WorkOrder object")
+    print("\t: System actor: Saves fully initialized WorkOrder object in the storage")
+    print("\t: Human actor: Triggers to start the WorkOrder")
+    print("\t: System actor: Keeps on updating progress status for the WorkOrder object till it completes")
+    print("\t: System actor: Saves fully completed WorkOrder object in the storage")
     
-    print("Use Case: Start WorkOrder. Actor: Human actor.") # An Employee within 'the department of public works' Starts the WorkOrder.
-    print("\t: An Employee within 'the department of public works' Starts the WorkOrder.")
-
-    print("Use Case: Update WorkOrder as work progress. Actor: System actor.") # During execution of the WorkOrder, different properties of the WorkOrder get updated.    
-    print("\t: During execution of the WorkOrder, different properties of the WorkOrder get updated.")
-
-    print("Use Case: Create Damage Report. Actor: Human actor.") # An Employee within 'the department of public works' Creates the 'Citizen's Damage report' dues to the Pothole.
+    # An Employee within 'the department of public works' Creates the 'Citizen's Damage report' dues to the Pothole.
+    print("Use Case: Damage Report Creation. Actors: Human actor(Employee of PHTRS), System actor")
     print("\t: An Employee within 'the department of public works' creates the Damage Report.")
-    print("\t: Damage Report contains. Citizen's personal information, type of damage and associated cost.")
-
-    print("Use Case: Store Damage Report. Actor: System actor.") # Saves the 'Damage Report' in storage.
-    print("\t: Saves the Damage Report in Storage.")
+    print("\t: Human actor logs in")
+    print("\t: Human actor: Creates Damage report with all details")
+    print("\t: System actor: Saves the Damage report object in the storage")
     return
 
 
@@ -261,4 +253,4 @@ if __name__ == "__main__":
 
     print("\n")
     print(" == Use Cases, and General working sequence == ")
-    execute_module5_ct_object_creation()
+    #execute_module5_ct_object_creation()
