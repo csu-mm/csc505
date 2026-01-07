@@ -1,10 +1,14 @@
-# Python Program: 
-# CSC505: Principles of Software Development
-# Module 8: Portfolio Project
-# Professor: Dr. Bingdong Li 
-# Created by Mukul Mondal
-# Friday, Sept 5, 2025
-
+'''
+Colorado State University Global
+( https://csuglobal.edu/academic-programs/graduate-degrees/masters-science-degree-artificial-intelligence-machine-learning )
+MS - Artificial Intelligence and Machine Learning
+Course: CSC505 - Principles of Software Development
+Module 8: Portfolio Project - design and python code
+Professor: Dr. Bingdong Li
+Created by Mukul Mondal
+September 5, 2025
+'''
+#
 '''
 Problem statement:
 -- Stepwise Refinement Approach --
@@ -13,9 +17,7 @@ Write a Python Script that will print all the steps in sequence for all
 the operations at the teller machine as shown in your diagram(s)
 '''
 
-
 from os import system, name
-
 
 # This is just a helper function to clear the screen
 # This is not required, per problem statement.
