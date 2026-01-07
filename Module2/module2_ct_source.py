@@ -1,7 +1,14 @@
-# Python Program: Module 2: Critical Thinking
-# Created by Mukul Mondal
-# Saturday, July 26th, 2025
-
+'''
+Colorado State University Global
+( https://csuglobal.edu/academic-programs/graduate-degrees/masters-science-degree-artificial-intelligence-machine-learning )
+MS - Artificial Intelligence and Machine Learning
+Course: CSC505 - Principles of Software Development
+Module 2: Critical Thinking - design and python code
+Professor: Dr. Bingdong Li
+Created by Mukul Mondal
+July 27, 2025
+'''
+#
 '''
 Problem statement:
 
