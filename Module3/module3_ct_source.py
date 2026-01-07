@@ -1,10 +1,14 @@
-# Python Program: 
-# CSC505: Principles of Software Development
-# Module 3: Critical Thinking
-# Professor: Dr. Bingdong Li 
-# Created by Mukul Mondal
-# Saturday, Aug 2nd, 2025
-
+'''
+Colorado State University Global
+( https://csuglobal.edu/academic-programs/graduate-degrees/masters-science-degree-artificial-intelligence-machine-learning )
+MS - Artificial Intelligence and Machine Learning
+Course: CSC505 - Principles of Software Development
+Module 3: Critical Thinking - design and python code
+Professor: Dr. Bingdong Li
+Created by Mukul Mondal
+August 2, 2025
+'''
+#
 '''
 Problem statement:
 
